@@ -1,0 +1,8 @@
+.container{
+    margin: 2rem auto;
+    color:red;
+}
+
+body{
+    background-image: url('{% static "original.jpg" %}');
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Project</title>
+    <style>
+        label{
+            padding: 1rem;
+        }
+        input{
+            border: none;
+            height: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body style="background-image: url('static/back.jpg'); background-repeat: no-repeat; background-size: cover; color: white;">
+    <div class="container" style="font-family: sans-serif; font-size: 2rem; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 5rem;">
+        <h1>
+            Hello 
+        </h1>
+        <div style = "font-size: 2rem;">
+            Enter names of two cities to compare
+        </div>
+        <form action="{% url 'test' %}" style="font-size: 2rem; display: flex; align-items: center; justify-content: center; flex-direction: column; font-size: 1.5rem; margin: 10px; padding: 2rem;">
+            {{ form }}
+            <br>
+            <button type="submit" style="text-align: center; background-color: white; border: none; border-radius: 10px; padding: 0.5rem; font-size: 20px;">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
